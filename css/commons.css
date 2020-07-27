@@ -1,0 +1,37 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+input[type=checkbox] {
+  /*去除浏览器默认样式*/
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  /*自己样式*/
+  width: 16px;
+  height: 16px;
+  border: 1px solid red;
+  outline: none;
+  background: transparent;
+  border: 1px solid #00BFFF;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.product-list {
+  background: #F2F6FC;
+  overflow-y: auto;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  min-height: 500px;
+}

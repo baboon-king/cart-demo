@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="layui/css/layui.css">
+
+  <link rel="stylesheet" href="font/iconfont.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/commons.css">
+
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/store.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="back"><span class="iconfont icon-arrow-lift" style="font-size: 2rem;"> </span></div>
+      <div class="title">
+        <h1>购物车</h1>
+      </div>
+      <div class="edit">编辑</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="product-list">
+      <div class="store">
+        <div class="store-info">
+          <input type="checkbox" name="" id="" data-tag="0" onchange="changeChecked(0)">
+          <span class="iconfont icon-store"></span>
+          <h1>范思哲品牌店</h1>
+          <span class="iconfont icon-arrow-right"></span>
+          <div class=" store-contact">
+            <span class="iconfont icon-atm"></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-base">
+            <input type="checkbox" name="" id="" data-tag="00" onchange="changeChecked(0,0)">
+            <div class="product-img">
+              <img
+                src="https://img.alicdn.com/bao/uploaded/i2/369153510/TB2Hs2WdHXlpuFjy1zbXXb_qpXa_!!369153510.jpg_190x190q90_.webp">
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-title">范思哲/VERSACE</div>
+            <div class="product-name"> 时尚简约牛皮男士手包</div>
+            <div class="product-condition">全新</div>
+            <div class="product-price-num">
+              <div class="product-price">
+                <span>￥9000</span>
+              </div>
+              <div class="product-num">
+                <div class="add-sami" onclick="changeNum(0,0,'+')">
+                  <span class="iconfont icon-add-select"></span>
+                </div>
+                <span class="product-num-val" data-tag="00">1</span>
+                <div class="add-sami" onclick="changeNum(0,0,'-')">
+                  <span class="iconfont icon-sami-select"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="store">
+        <div class="store-info">
+          <input type="checkbox" name="" id="" data-tag="1" onchange="changeChecked(1)">
+          <span class="iconfont icon-store"></span>
+          <h1>Burbery专营店</h1>
+          <span class="iconfont icon-arrow-right"></span>
+          <div class=" store-contact">
+            <span class="iconfont icon-atm"></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-base">
+            <input type="checkbox" name="" id="" data-tag="10" onchange="changeChecked(1,0)">
+            <div class="product-img">
+              <img
+                src="https://img.alicdn.com/bao/uploaded/i1/1839091820/O1CN01xHxnHo1PJbOI9mKIj_!!1839091820.jpg_190x190q90_.webp">
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-title">博柏利/Burbery</div>
+            <div class="product-name"> 经典格纹棉质男士衬衣</div>
+            <div class="product-condition">九五成新</div>
+            <div class="product-price-num">
+              <div class="product-price">
+                <span>￥12000</span>
+              </div>
+              <div class="product-num">
+                <div class="add-sami" onclick="changeNum(1,0,'+')">
+                  <span class="iconfont icon-add-select"></span>
+                </div>
+                <span class="product-num-val" data-tag="10">1</span>
+                <div class="add-sami" onclick="changeNum(1,0,'-')">
+                  <span class="iconfont icon-sami-select"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-base">
+            <input type="checkbox" name="" id="" data-tag="11" onchange="changeChecked(1,1)">
+            <div class="product-img">
+              <img
+                src="https://img.alicdn.com/bao/uploaded/i3/1910887896/O1CN0128CPneTGFgTttn0_!!1910887896.jpg_190x190q90_.webp">
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-title">博柏利/Burbery</div>
+            <div class="product-name"> 格纹苏流羊绒围巾</div>
+            <div class="product-condition">九成新</div>
+            <div class="product-price-num">
+              <div class="product-price">
+                <span>￥5000</span>
+              </div>
+              <div class="product-num">
+                <div class="add-sami" onclick="changeNum(1,1,'+')">
+                  <span class="iconfont icon-add-select"></span>
+                </div>
+                <span class="product-num-val" data-tag="11">1</span>
+                <div class="add-sami" onclick="changeNum(1,1,'-')">
+                  <span class="iconfont icon-sami-select"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="store">
+        <div class="store-info">
+          <input type="checkbox" name="" id="" data-tag="2" onchange="changeChecked(2)">
+          <span class="iconfont icon-store"></span>
+          <h1>范思哲品牌店</h1>
+          <span class="iconfont icon-arrow-right"></span>
+          <div class=" store-contact">
+            <span class="iconfont icon-atm"></span>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-base">
+            <input type="checkbox" name="" id="" data-tag="20" onchange="changeChecked(2,0)">
+            <div class="product-img">
+              <img
+                src="https://img.alicdn.com/bao/uploaded/i4/773384983/TB2XsnPXo_C11Bjy1zeXXXtGpXa_!!773384983.jpg_190x190q90_.webp">
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-title">菲拉格慕/Salvatore Ferragamo</div>
+            <div class="product-name"> 极简牛皮单肩背包</div>
+            <div class="product-condition">九五成新</div>
+            <div class="product-price-num">
+              <div class="product-price">
+                <span>￥5380</span>
+              </div>
+              <div class="product-num">
+                <div class="add-sami" onclick="changeNum(2,0,'+')">
+                  <span class="iconfont icon-add-select"></span>
+                </div>
+                <span class="product-num-val" data-tag="20">1</span>
+                <div class="add-sami" onclick="changeNum(2,0,'-')">
+                  <span class="iconfont icon-sami-select"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="select-all"><input type="checkbox" name="" id="selectAll" onclick="selectAll()"> 全选</div>
+      <div class="buy">
+        <div class="total">
+          <span>总计：</span>
+          <div class="total-price">
+            <span>￥0</span>
+          </div>
+        </div>
+        <div class="buy-btu"> 结算</div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="layui/layui.all.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- <span class="iconfont icon-arrow-right"></span> -->
+  <!-- <span class="iconfont icon-arrow-lift"></span> -->
+  <!-- <span class="iconfont icon-atm"></span> -->
+  <!-- <span class="iconfont icon-store"></span> -->
+  <!-- <span class="iconfont icon-add-select"></span> -->
+  <!-- <span class="iconfont icon-sami-select"></span> -->
+</body>
+
+</html>

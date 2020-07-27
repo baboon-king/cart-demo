@@ -1,0 +1,28 @@
+.store {
+  background: #ffffff;
+  padding: .5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.store .store-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.store-info>* {
+  margin-right: 10px;
+}
+
+.store-info .iconfont {
+  font-size: 1.5rem;
+}
+
+.store-contact {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

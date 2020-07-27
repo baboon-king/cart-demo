@@ -1,0 +1,55 @@
+.footer {
+  height: 60px;
+  width: calc(100% - 1rem);
+  background: white;
+  padding: 0 .5rem;
+  font-size: 1rem;
+
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .select-all {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.footer .select-all>* {
+  margin-right: 10px;
+}
+
+.footer .buy {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer .buy .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.footer .buy .total .total-price {
+  white-space: nowrap;
+  line-height: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: red;
+}
+
+.footer .buy .buy-btu {
+  padding: .3rem 1.5rem;
+  border-radius: 20px;
+  background: rgb(223, 102, 102);
+  color: white;
+  font-weight: bold;
+}
